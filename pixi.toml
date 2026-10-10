@@ -9,6 +9,12 @@ remove-refraction = "python remove_refraction.py"
 visualise-refraction = "python visualise_refraction.py"
 planarity = "python evaluation/planarity.py"
 
+# VSLAM-LAB capability (vslamlab_refrax.py): VSLAM-LAB clones this fork to Capabilities/sources/refrax and its
+# Capabilities/refrax.py runs `inference --sequence-path <sequence> ...` on dataset/sequence targets.
+install = "python vslamlab_refrax.py --prefetch"
+inference = "python vslamlab_refrax.py"
+test = "python vslamlab_refrax.py --prefetch && python vslamlab_refrax.py --help > /dev/null && echo OK"
+
 [dependencies]
 python = ">=3.10"
 numpy = ">=1.24"
