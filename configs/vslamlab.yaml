@@ -16,4 +16,4 @@ correction:
   z0_fixed: 1.0             # scene depth (m) the correction map is built for
   fit_canvas: true          # size the output to hold the whole corrected image (principal point shifts accordingly);
                             # false = clip to the source W x H (Refrax's own behaviour, pair with --zoom in-bounds)
-  crop_valid_bbox: false    # crop outputs to the largest all-valid rectangle (no black borders)
+  crop_valid_bbox: true     # crop outputs to the largest all-valid rectangle (no black borders); --no-crop keeps the full canvas
